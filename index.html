@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <?!= include ("style");?>
     <title>Directorio de Enfermería</title>
 </head>
 <body>
@@ -21,58 +22,58 @@
             </div>
         </nav>
     </header>
-    <section>
-    <div class="row">
-            <div class="col s12 m12 l12">
-            </div>
-            <div class="row">
-                <div class="col m4 l4"></div>
-                <div class="col s12 m4 l4">
-                    <div class="input-field">
-                        <i class="material-icons prefix">class</i>
-                        <input type="text" id="grupo" class="autocomplete">
-                        <label for="grupo">Grupo del alumno</label>
+    <main class="container ">
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel  z-debth-2">
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="material-icons prefix">class</i>
+                            <input type="text" id="grupo" class="autocomplete">
+                            <label for="grupo">Grupo del alumno</label>
+                        </div>
                     </div>
-                </div>
-            </div>
-        <div class="row">
-            <div class="col m4 l4"></div>
-            <div class="col s12 m4 l4">
-                <div class="input-field">
-                    <i class="material-icons prefix">person</i>
-                    <input type="text" id="alumno" class="autocomplete">
-                    <label for="alumno">Nombre del alumno</label>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m3 l3">
-                <div class="input-field">
-                    <i class="material-icons prefix">email</i>
-                    <input disabled value="Correo del alumno" id="aemail" type="text" class="validate">
-                </div>
-            </div>
-            <div class="col s12 m3 l3">
-                <div class="input-field">
-                    <i class="material-icons prefix">email</i>
-                    <input disabled value="Correo del tutor" id="femail" type="text" class="validate">
-                </div>
-            </div>
-            <div class="col s12 m3 l3">
-                <div class="input-field">
-                    <i class="material-icons prefix">phone</i>
-                    <input disabled value="Teléfono" id="telefono" type="text" class="validate">
-                </div>
-            </div>
-            <div class="col s12 m3 l3">
-                <div class="input-field">
-                    <i class="material-icons prefix">phone_forwarded</i>
-                    <input disabled value="Teléfono de emergencia" id="telefonoe" type="text" class="validate">
-                </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="material-icons prefix">person</i>
+                            <input type="text" id="alumno" class="autocomplete">
+                            <label for="alumno">Nombre del alumno</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input disabled value="Correo del alumno" id="aemail" type="text" class="validate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input disabled value="Correo del tutor" id="femail" type="text" class="validate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="material-icons prefix">phone</i>
+                            <input disabled value="Teléfono" id="telefono" type="text" class="validate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <i class="material-icons prefix">phone_forwarded</i>
+                            <input disabled value="Teléfono de emergencia" id="telefonoe" type="text" class="validate">
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
-    </section>
-    
+    </main>
+    <footer class="page-footer blue darken-4 col s12" >
+        <div class="container white-text">
+        © 2020 Copyright Instituto Francisco Possenti
+        <a class="white-text right" href="#!" >Hecha con <i class="material-icons">favorite</i> y <i class="material-icons">code</i></a>
+        </div>
+  </footer>
     <?!= include ("js");?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
