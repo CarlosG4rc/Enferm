@@ -6,7 +6,7 @@ function include (filename) {
     return HtmlService.createTemplateFromFile(filename).getRawContent();
 }
 function completar(){
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=0');
     var sheet = ss.getSheetByName('Grupos');
     var data = sheet.getRange(1,1).getDataRegion().getValues();
     var grupo = {};
@@ -16,7 +16,7 @@ function completar(){
     return grupo;
 }
 function autocompletar(clase){
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=0');
     var sheet = ss.getSheetByName(clase);
     var data = sheet.getRange(1,1).getDataRegion().getValues();
     var nombre = {};
@@ -26,7 +26,7 @@ function autocompletar(clase){
     return nombre;
 }
 function data(alumno){
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=0');
     var grupo = alumno[1];
     var nombre = alumno [0];
     var sheet = ss.getSheetByName(grupo);
@@ -47,7 +47,7 @@ function data(alumno){
     }
 }
 function getaemail (alumno){
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=0');
     var grupo = alumno[1];
     var nombre = alumno [0];
     var sheet = ss.getSheetByName(grupo);
@@ -67,7 +67,7 @@ function getaemail (alumno){
 function getfemail (alumno){
     var grupo = alumno[1];
     var nombre = alumno [0];
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=0');
     var sheet = ss.getSheetByName(grupo);
     var lastrowbd = sheet.getDataRange().getNumRows();
     var column = sheet.getDataRange();
@@ -85,7 +85,7 @@ function getfemail (alumno){
 function getphone (alumno){
     var grupo = alumno[1];
     var nombre = alumno [0];
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=0');
     var sheet = ss.getSheetByName(grupo);
     var lastrowbd = sheet.getDataRange().getNumRows();
     var column = sheet.getDataRange();
@@ -103,7 +103,7 @@ function getphone (alumno){
 function getephone (alumno){
     var grupo = alumno[1];
     var nombre = alumno [0];
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=0');
     var sheet = ss.getSheetByName(grupo);
     var lastrowbd = sheet.getDataRange().getNumRows();
     var column = sheet.getDataRange();
